@@ -6,8 +6,8 @@ const backgroundPosition = ref('right bottom')
 const borderRadius = ref(15)
 const picture = ref(defaultBg)
 const text = ref('Vue.js Paris')
-const subtitle = ref('3 Avril 2024')
-const width = ref(1200)
+const subtitle = ref('')
+const width = ref(640)
 
 const containerStyle = computed(() => ({
   backgroundImage: `url(${picture.value})`,
@@ -17,7 +17,8 @@ const containerStyle = computed(() => ({
   backgroundPosition: backgroundPosition.value,
 }))
 
-const height = computed(() => width.value * (9 / 16))
+// const height = computed(() => width.value * (9 / 16))
+const height = computed(() => width.value * 0.5)
 const logoWidth = computed(() => width.value * 0.2)
 const logoHeight = logoWidth
 const fontSize = computed(() => 0.11 * width.value)
