@@ -5,8 +5,8 @@ import defaultBg from './assets/bg.jpg'
 const backgroundPosition = ref('right bottom')
 const borderRadius = ref(15)
 const picture = ref(defaultBg)
-const text = ref('Vue.js Paris')
-const subtitle = ref('')
+const text = ref('Vue.js Paris #30')
+const subtitle = ref('26 Juin')
 const width = ref(640)
 
 const containerStyle = computed(() => ({
